@@ -1,0 +1,425 @@
+/*RESET GLOBAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*BODY*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0F0B0A;
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(15, 11, 10, 0.95);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid #2B1B17;
+
+    z-index: 999;
+}
+
+/*LOGO*/
+.logo h1 {
+    color: #F3DFC8;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.logo span {
+    color: #C58B5B;
+}
+
+/*MENU*/
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF7F0;
+
+    font-size: 0.95rem;
+    font-weight: 400;
+
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    color: #C58B5B;
+}
+
+/*BOTÃO*/
+header button {
+    width: 140px;
+    height: 45px;
+
+    border: none;
+    border-radius: 30px;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+}
+
+header button:hover {
+    transform: translateY(-3px);
+    background-color: #ddb18d;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 150px 8% 50px;
+}
+
+/* TEXTO HERO */
+
+.hero-text{
+    width: 50%;
+}
+
+.hero-text h2{
+    font-size: 5rem;
+    line-height: 90px;
+
+    margin-bottom: 25px;
+
+    color: #FFF7F0;
+}
+
+.hero-text p{
+    font-size: 1rem;
+    line-height: 30px;
+
+    color: #d8c7ba;
+
+    margin-bottom: 35px;
+}
+
+.hero-text a{
+    display: inline-block;
+
+    padding: 14px 35px;
+
+    background-color: #C58B5B;
+    color: #0F0B0A;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    transition: 0.4s;
+}
+
+.hero-text a:hover{
+    transform: translateY(-5px);
+
+    background-color: #ddb18d;
+}
+
+/* IMAGEM HERO */
+
+.hero-img{
+    width: 45%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img img{
+    width: 100%;
+    max-width: 550px;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes float{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+/* =========================
+CARDS
+========================= */
+
+.cards{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 50px 8%;
+}
+
+/* CARD */
+
+.card{
+    width: 350px;
+
+    background-color: #1A120F;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+/* IMG CARD */
+
+.card img{
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+}
+
+/* TEXTO CARD */
+
+.card h3{
+    font-size: 1.5rem;
+
+    margin: 20px;
+}
+
+.card p{
+    margin: 0 20px 25px;
+
+    color: #c9b6a8;
+}
+
+/* =========================
+PRODUTOS
+========================= */
+
+.products{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 80px 8%;
+
+    flex-wrap: wrap;
+}
+
+/* CARD PRODUTO */
+
+.product-card{
+    width: 320px;
+
+    background-color: #F3DFC8;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    transition: 0.4s;
+}
+
+.product-card:hover{
+    transform: translateY(-10px);
+}
+
+/* IMG PRODUTO */
+
+.product-card img{
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+/* TEXTO */
+
+.product-card h3{
+    margin-top: 20px;
+
+    font-size: 1.5rem;
+
+    color: #2B1B17;
+}
+
+.product-card p{
+    margin: 15px 0;
+
+    color: #5A3726;
+}
+
+.product-card span{
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    color: #2B1B17;
+}
+
+/* BOTÃO */
+
+.product-card button{
+    width: 100%;
+    height: 45px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #2B1B17;
+    color: #FFF7F0;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+}
+
+.product-card button:hover{
+    background-color: #5A3726;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+    width: 100%;
+
+    padding: 40px 8%;
+
+    text-align: center;
+
+    border-top: 1px solid #2B1B17;
+}
+
+footer h2{
+    margin-bottom: 10px;
+
+    color: #C58B5B;
+}
+
+footer p{
+    color: #c9b6a8;
+}
+
+/*RESPONSIVEL*/
+@media(max-width: 1000px){
+
+    .hero{
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 4rem;
+    }
+
+    .hero-text{
+        width: 100%;
+    }
+
+    .hero-img{
+        width: 100%;
+    }
+
+    .hero-text h2{
+        font-size: 4rem;
+        line-height: 70px;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media(max-width: 900px){
+
+    nav{
+        display: none;
+    }
+
+    header{
+        padding: 0 5%;
+    }
+
+}
+
+@media(max-width: 600px){
+
+    .hero-text h2{
+        font-size: 3rem;
+        line-height: 55px;
+    }
+
+    .hero-text p{
+        font-size: 0.95rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .product-card{
+        width: 100%;
+    }
+
+}
